@@ -17,6 +17,6 @@ int main(){
     printf("【課題4】参加できない人数は%d人です。\n\n",class_a-(baseball_b*9+volleyball_c*6));
     printf("三角形の高さ(cm)と底辺(cm)を入力してください。\n");
     scanf(" %lf %lf", &height, &base);
-    printf("【課題5】三角形の面積は%lfcm^2です。\n\n", height * base / 2);
+    printf("【課題5】三角形の面積は%lfcm^2です。\n\n", height * base / 2.0);
     return 0;
 }
