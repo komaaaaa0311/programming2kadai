@@ -14,7 +14,11 @@ int main(){
     printf("【演習3】合計金額は%d円(税込み)です。\n\n",d*100+e*88+f*398);
     printf("クラスの人数と野球1チーム(9人)とバレー1チーム(6人)のチーム数を入力してください。\n");
     scanf(" %d %d %d", &class_a, &baseball_b, &volleyball_c);
-    printf("【演習4】参加できない人数は%d人です。\n\n",class_a-(baseball_b*9+volleyball_c*6));
+    if (baseball_b*9+volleyball_c*6 < class_a){
+        printf("【演習4】参加できない人数は%d人です。\n\n",class_a-(baseball_b*9+volleyball_c*6));
+    } else {
+        printf("【演習4】あと%d人必要です。\n\n",-(class_a-(baseball_b*9+volleyball_c*6)));
+    }
     printf("三角形の高さ(cm)と底辺(cm)を入力してください。\n");
     scanf(" %lf %lf", &height, &base);
     printf("【演習5】三角形の面積は%lfcm^2です。\n\n", height * base / 2.0);
